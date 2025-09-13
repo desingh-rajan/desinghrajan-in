@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "🚀 Deploying to production..."
+
+# Build and push Docker image
+echo "📦 Building Docker image..."
+docker build -t desinghrajan/desinghrajan:latest .
+
+echo "📤 Pushing to Docker Hub..."
+docker push desinghrajan/desinghrajan:latest
+
+# Deploy to server
+echo "🖥️ Deploying to server..."
+ssh root@139.84.144.43 "docker stop desinghrajan-web && docker rm desinghrajan-web 2>/dev/null || true"
+ssh root@139.84.144.43 "docker run -d --name desinghrajan-web --restart unless-stopped -p 3000:80 -e RAILS_MASTER_KEY=be810ab82199f78005dc6c07aa2dcde2 -e SOLID_QUEUE_IN_PUMA=true -e WEB_CONCURRENCY=1 desinghrajan/desinghrajan:latest"
+
+echo "✅ Deployment complete! Visit https://desinghrajan.in"
