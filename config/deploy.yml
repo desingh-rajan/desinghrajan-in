@@ -33,8 +33,8 @@ env:
   secret:
     - RAILS_MASTER_KEY
   clear:
-    # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
-    SOLID_QUEUE_IN_PUMA: true
-
     # Set number of cores available to the application (1 vCPU on your Vultr server)
     WEB_CONCURRENCY: 1
+
+    # Disable Rails services for static portfolio site
+    RAILS_ENV: production

@@ -15,4 +15,6 @@ test:
   <<: *default
 
 production:
-  <<: *default
+  # Minimal config - no separate processes for static portfolio site
+  dispatchers: []
+  workers: []
