@@ -2,22 +2,28 @@
 service: desinghrajan
 
 # Name of the container image.
-image: desingh/desinghrajan
+image: desinghrajan/desinghrajan
 
 # Deploy to these servers.
 servers:
   web:
-    - 139.84.144.43
+    hosts:
+      - 139.84.144.43
+    options:
+      publish:
+        - "3000:80"
 
-# Enable SSL auto certification via Let's Encrypt
-proxy:
-  ssl: true
-  host: desinghrajan.in
+# Build configuration
+builder:
+  arch:
+    - amd64
+
+# No proxy configuration - deploy containers directly
 
 # Credentials for your image host.
 registry:
   # Using Docker Hub
-  username: desingh
+  username: desinghrajan
   # Always use an access token rather than real password when possible.
   password:
     - KAMAL_REGISTRY_PASSWORD
@@ -32,24 +38,3 @@ env:
 
     # Set number of cores available to the application (1 vCPU on your Vultr server)
     WEB_CONCURRENCY: 1
-
-# Configure healthcheck for your Rails app
-healthcheck:
-  path: /up
-  port: 80
-  max_attempts: 7
-
-# Configure traefik proxy settings for your domain
-traefik:
-  options:
-    publish:
-      - "443:443"
-      - "80:80"
-    volume:
-      - "/letsencrypt/acme.json:/letsencrypt/acme.json"
-  args:
-    entryPoints.web.address: ":80"
-    entryPoints.websecure.address: ":443"
-    certificatesResolvers.letsencrypt.acme.tlsChallenge: true
-    certificatesResolvers.letsencrypt.acme.email: "hello@desinghrajan.in"
-    certificatesResolvers.letsencrypt.acme.storage: "/letsencrypt/acme.json"
