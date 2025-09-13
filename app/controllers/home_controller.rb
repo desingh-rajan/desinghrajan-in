@@ -3,4 +3,3 @@ class HomeController < ApplicationController
     # Portfolio landing page
   end
 end
-
