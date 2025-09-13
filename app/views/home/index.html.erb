@@ -1,0 +1,642 @@
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-gradient-to-r from-[#4f46e5]/60 to-[#4f46e5]/80 backdrop-blur-md shadow-md">
+  <div class="max-w-screen-xl mx-auto px-6 flex justify-between items-center py-4">
+    <h1 class="text-white text-xl font-bold">Desingh Rajan</h1>
+    <div class="hidden md:flex space-x-8">
+      <a href="#about" class="text-white hover:text-indigo-200 transition">About</a>
+      <a href="#skills" class="text-white hover:text-indigo-200 transition">Skills</a>
+      <a href="#projects" class="text-white hover:text-indigo-200 transition">Projects</a>
+      <a href="#contact" class="text-white hover:text-indigo-200 transition">Contact</a>
+    </div>
+    <div class="md:hidden">
+      <button id="mobile-menu-button" class="text-white hover:text-indigo-200">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-[#4f46e5]/90 to-[#4f46e5]/95 backdrop-blur-md">
+    <div class="px-6 py-4 space-y-2">
+      <a href="#about" class="block text-white hover:text-indigo-200 transition py-2">About</a>
+      <a href="#skills" class="block text-white hover:text-indigo-200 transition py-2">Skills</a>
+      <a href="#projects" class="block text-white hover:text-indigo-200 transition py-2">Projects</a>
+      <a href="#contact" class="block text-white hover:text-indigo-200 transition py-2">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="pt-20 pb-12 bg-gradient-to-br from-indigo-50 to-white">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <div class="flex flex-col items-center text-center py-20">
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-4 leading-tight w-full">
+        Full Stack Web Developer
+        <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block">
+          System Architect
+        </span>
+      </h1>
+      <p class="text-xl text-slate-700 mb-8 max-w-4xl mx-auto leading-relaxed w-full">
+        <strong>10+ years</strong> building scalable backend APIs, big data systems, and geo-spatial applications with <strong>Ruby on Rails</strong> and <strong>Node.js</strong>.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mb-10 w-full">
+        <span class="inline-flex items-center px-4 py-2 rounded bg-white text-slate-700 shadow text-lg"><span class="mr-2">🏗️</span>System Architecture</span>
+        <span class="inline-flex items-center px-4 py-2 rounded bg-white text-slate-700 shadow text-lg"><span class="mr-2">👥</span>Team Mentorship</span>
+        <span class="inline-flex items-center px-4 py-2 rounded bg-white text-slate-700 shadow text-lg"><span class="mr-2">🔍</span>Code Quality</span>
+        <span class="inline-flex items-center px-4 py-2 rounded bg-white text-slate-700 shadow text-lg"><span class="mr-2">☁️</span>DevOps Excellence</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center w-full">
+        <a href="#projects" class="inline-flex items-center px-8 py-4 bg-[#4f46e5] text-white font-semibold rounded-lg shadow hover:bg-indigo-500 hover:shadow-lg transition-colors text-lg">
+          View My Work
+        </a>
+        <a href="#contact" class="inline-flex items-center px-8 py-4 border border-[#4f46e5] text-[#4f46e5] font-semibold rounded-lg hover:bg-indigo-50 hover:text-indigo-700 hover:shadow transition-colors text-lg">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<div class="w-full h-1 bg-indigo-100/60 my-8 rounded-full"></div>
+<section id="about" class="py-16 bg-gradient-to-br from-white to-indigo-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">About Me</h2>
+      <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+        Senior developer with deep expertise in <strong>big data processing</strong>, <strong>geo-spatial systems</strong>, and <strong>high-performance backend APIs</strong>.
+        I architect scalable solutions, mentor development teams, and lead technical decision-making in complex enterprise environments.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100">
+        <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-slate-900 mb-2">Backend Architecture</h3>
+        <p class="text-slate-600">Scalable APIs, big data processing, geo-spatial systems with Rails & Node.js</p>
+      </div>
+
+      <div class="text-center p-6 rounded-lg bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100">
+        <div class="w-12 h-12 mx-auto mb-4 bg-orange-100 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-slate-900 mb-2">Team Leadership</h3>
+        <p class="text-slate-600">Mentoring developers, code quality, technical guidance, and knowledge sharing</p>
+      </div>
+
+      <div class="text-center p-6 rounded-lg bg-gradient-to-br from-green-50 to-emerald-50 border border-green-100">
+        <div class="w-12 h-12 mx-auto mb-4 bg-green-100 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-slate-900 mb-2">DevOps & Infrastructure</h3>
+        <p class="text-slate-600">Docker, Kubernetes, CI/CD pipelines, cloud architecture, and system optimization</p>
+      </div>
+    </div>
+
+    <!-- Experience Highlights -->
+    <div class="mt-16 bg-gradient-to-r from-indigo-50 to-white rounded-lg p-8">
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-slate-900 mb-2">Experience Highlights</h3>
+        <p class="text-slate-600">A decade of building scalable systems and leading development teams</p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div class="p-4">
+          <div class="text-3xl font-bold text-blue-600 mb-2">6+</div>
+          <div class="text-sm text-slate-600">Enterprise Projects</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl font-bold text-green-600 mb-2">15+</div>
+          <div class="text-sm text-slate-600">Professional Projects</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl font-bold text-purple-600 mb-2">20+</div>
+          <div class="text-sm text-slate-600">Developers Mentored</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl font-bold text-red-500 mb-2">100+</div>
+          <div class="text-sm text-slate-600">YouTube Gaming/Tutorial Videos Uploaded</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-16 bg-slate-50">
+  <div class="max-w-screen-xl mx-auto px-2">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">Technical Skills</h2>
+      <p class="text-lg text-slate-600">Technologies and tools I work with</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 gap-8 justify-center">
+      <!-- Backend -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-red-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3">🔧</span>
+          Backend & APIs
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Ruby on Rails</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">10+ Years</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Node.js + Express</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Elixir + Phoenix</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Sinatra</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Expert</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-blue-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">🎨</span>
+          Frontend
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">React</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Material-UI</span>
+            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">4+ Years</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">UI/UX Design</span>
+            <span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded">4+ Years</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Next.js</span>
+            <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Tailwind CSS</span>
+            <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded">Expert</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-cyan-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-cyan-100 rounded-lg flex items-center justify-center mr-3">📱</span>
+          Mobile
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Flutter</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Dart</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">React Native</span>
+            <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Intermediate</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">iOS/Android</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Deployment</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big Data & Geo -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-purple-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">📊</span>
+          Big Data & Geo
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">PostGIS/Spatial Data</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">ElasticSearch</span>
+            <span class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Redis/Caching</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Data Processing</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-orange-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-3">⚙️</span>
+          DevOps & Infrastructure
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Docker</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">CI/CD Automation</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Nginx/Load Balancing</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Ruby/Node Scripting</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-yellow-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">☁️</span>
+          Cloud
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Vultr VPS</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Production</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">AWS</span>
+            <span class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">Certified</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Railway</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Hobby</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Vercel</span>
+            <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Next.js</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Render</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Rails</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Heroku</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Legacy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-indigo-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">👥</span>
+          Leadership & Mentoring
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Code Quality</span>
+            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Daily</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Junior Mentoring</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">10+ Years</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Technical Guidance</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Senior</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Architecture Decisions</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Lead</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testing & Automation -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-rose-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-rose-100 rounded-lg flex items-center justify-center mr-3">🧪</span>
+          Testing & Automation
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Cucumber BDD</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Selenium + Ruby</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Test Automation</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">RSpec/Jest</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marketing & SEO -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-amber-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center mr-3">📈</span>
+          Marketing & SEO
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">SEO Optimization</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">1+ Year</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Digital Marketing</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Experience</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Google Ads</span>
+            <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Campaign</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Analytics</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Tracking</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gaming -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-emerald-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">🎮</span>
+          Gaming & Fun
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">DOTA 2</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Squad Goals</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Age of Empires</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Strategy</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Insurgency</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Tactical</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Clash of Clans</span>
+            <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Mobile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Projects</h2>
+      <p class="text-lg text-slate-600">Some of my recent work and side projects</p>
+      <div class="mt-4 inline-flex items-center px-4 py-2 bg-amber-50 border border-amber-200 rounded-lg">
+        <svg class="w-4 h-4 text-amber-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="text-sm text-amber-700 font-medium">This section will be updated soon - projects coming shortly!</span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+          <div class="text-white text-6xl font-bold">DR</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Portfolio & Business Platform</h3>
+          <p class="text-slate-600 mb-4">This very website - a Rails 8 application with modern design and deployment automation.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">Rails 8</span>
+            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Tailwind CSS</span>
+            <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Docker</span>
+          </div>
+          <a href="https://github.com/desingh" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View Code →</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Analytics Dashboard</h3>
+          <p class="text-slate-600 mb-4">Real-time analytics dashboard with interactive charts and data visualization.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">React</span>
+            <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded">D3.js</span>
+            <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">Rails API</span>
+          </div>
+          <span class="text-slate-400 text-sm">Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+          </svg>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">DevOps Automation</h3>
+          <p class="text-slate-600 mb-4">Automated deployment pipeline with Docker, Nginx, and monitoring setup.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Docker</span>
+            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Kamal</span>
+            <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded">Vultr</span>
+          </div>
+          <span class="text-slate-400 text-sm">In Progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-br from-slate-900 to-slate-800">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-white mb-4">Let's Work Together</h2>
+      <p class="text-xl text-slate-300">Have a project in mind? Let's discuss how I can help bring it to life.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-20 lg:gap-24">
+      <div class="pr-8 lg:pr-12">
+        <h3 class="text-xl font-semibold text-white mb-6">Get in Touch</h3>
+        <div class="space-y-4">
+          <div class="flex items-center text-slate-300">
+            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <a href="mailto:desinghrajan@gmail.com" class="hover:text-white transition-colors">desinghrajan@gmail.com</a>
+          </div>
+          <div class="flex items-center text-slate-300">
+            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0c1.105 0 2 .895 2 2v5.255zM2 10h10m8 0h2"></path>
+            </svg>
+            <a href="https://www.linkedin.com/in/desinghrajan/" class="hover:text-white transition-colors" target="_blank">LinkedIn Profile</a>
+          </div>
+          <div class="flex items-center text-slate-300">
+            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+            <a href="https://github.com/desingh-rajan" class="hover:text-white transition-colors" target="_blank">GitHub Profile</a>
+          </div>
+          <div class="flex items-center text-slate-300">
+            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M11.64 5.93H1.14s1.14 5.75 1.14 5.75v7.39s10.5-1.14 10.5-1.14S11.64 5.93 11.64 5.93z" />
+              <path d="M22.86 5.93H12.36s1.14 12 1.14 12 10.5-1.14 10.5-1.14V5.93h-1.14z" />
+            </svg>
+            <a href="https://www.twitch.tv/feedertony" class="hover:text-white transition-colors" target="_blank">Twitch Stream</a>
+          </div>
+          <div class="flex items-center text-slate-300">
+            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+            <a href="https://www.youtube.com/@feedertony_gaming" class="hover:text-white transition-colors" target="_blank">YouTube Channel</a>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h4 class="text-lg font-medium text-white mb-4">Professional Services</h4>
+          <ul class="space-y-3 text-slate-300">
+            <li>• Backend API Development (Rails, Node.js, Elixir)</li>
+            <li>• Frontend Development (React, Material-UI, 4+ years UI/UX)</li>
+            <li>• Test Automation (Cucumber, Selenium, CI/CD)</li>
+            <li>• System Architecture & Technical Leadership</li>
+            <li>• DevOps & Infrastructure (Docker, Automation)</li>
+            <li>• SEO & Digital Marketing Optimization</li>
+            <li>• Technical Consulting & Team Mentoring</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="bg-white rounded-xl shadow-lg p-10 w-full max-w-xl">
+          <%= form_with url: "#", local: true, class: "space-y-6" do |form| %>
+          <div>
+            <%= form.label :name, "Name", class: "block text-base font-semibold text-indigo-900 mb-2" %>
+            <%= form.text_field :name, class: "w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f46e5] focus:border-transparent", required: true %>
+          </div>
+
+          <div>
+            <%= form.label :email, "Email", class: "block text-base font-semibold text-indigo-900 mb-2" %>
+            <%= form.email_field :email, class: "w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f46e5] focus:border-transparent", required: true %>
+          </div>
+
+          <div>
+            <%= form.label :project_type, "Project Type", class: "block text-base font-semibold text-indigo-900 mb-2" %>
+            <%= form.select :project_type,
+                options_for_select([
+                  ['Web Application', 'web_app'],
+                  ['Technical Consulting', 'consulting'],
+                  ['Performance Optimization', 'optimization'],
+                  ['DevOps Setup', 'devops'],
+                  ['Other', 'other']
+                ]),
+                { prompt: 'Select a service...' },
+                { class: "w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f46e5] focus:border-transparent" } %>
+          </div>
+
+          <div>
+            <%= form.label :message, "Message", class: "block text-base font-semibold text-indigo-900 mb-2" %>
+            <%= form.text_area :message, rows: 5, class: "w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f46e5] focus:border-transparent", placeholder: "Tell me about your project...", required: true %>
+          </div>
+
+          <div>
+            <%= form.submit "Send Message", class: "w-full bg-[#4f46e5] text-white py-4 px-4 rounded-lg shadow hover:bg-indigo-500 hover:shadow-lg transition font-bold text-lg" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center bg-gradient-to-r from-[#4f46e5]/80 to-indigo-500/80 py-6 mt-16 rounded-t-xl">
+      <p class="text-white">&copy; <%= Date.current.year %> Desingh Rajan. All rights reserved.</p>
+      <p class="mt-2 text-indigo-100">Built with Ruby on Rails & Tailwind CSS | Domain: GoDaddy | Hosted: Vultr</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Smooth scroll behavior -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .font-sans {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+</style>
+
+<!-- Mobile menu JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    }
+  });
+</script>

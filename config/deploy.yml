@@ -1,0 +1,55 @@
+# Name of your application. Used to uniquely configure containers.
+service: desinghrajan
+
+# Name of the container image.
+image: desingh/desinghrajan
+
+# Deploy to these servers.
+servers:
+  web:
+    - 139.84.144.43
+
+# Enable SSL auto certification via Let's Encrypt
+proxy:
+  ssl: true
+  host: desinghrajan.in
+
+# Credentials for your image host.
+registry:
+  # Using Docker Hub
+  username: desingh
+  # Always use an access token rather than real password when possible.
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+# Inject ENV variables into containers (secrets come from .kamal/secrets).
+env:
+  secret:
+    - RAILS_MASTER_KEY
+  clear:
+    # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
+    SOLID_QUEUE_IN_PUMA: true
+
+    # Set number of cores available to the application (1 vCPU on your Vultr server)
+    WEB_CONCURRENCY: 1
+
+# Configure healthcheck for your Rails app
+healthcheck:
+  path: /up
+  port: 80
+  max_attempts: 7
+
+# Configure traefik proxy settings for your domain
+traefik:
+  options:
+    publish:
+      - "443:443"
+      - "80:80"
+    volume:
+      - "/letsencrypt/acme.json:/letsencrypt/acme.json"
+  args:
+    entryPoints.web.address: ":80"
+    entryPoints.websecure.address: ":443"
+    certificatesResolvers.letsencrypt.acme.tlsChallenge: true
+    certificatesResolvers.letsencrypt.acme.email: "hello@desinghrajan.in"
+    certificatesResolvers.letsencrypt.acme.storage: "/letsencrypt/acme.json"

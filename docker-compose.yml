@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:80"
+    environment:
+      - RAILS_ENV=production
+      - RAILS_MASTER_KEY_FILE=/rails/config/master.key
+    volumes:
+      - ./storage:/rails/storage
+      - ./log:/rails/log
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: For development with live reloading
+  dev:
+    build:
+      context: .
+      target: build
+    ports:
+      - "3001:3000"
+    environment:
+      - RAILS_ENV=development
+    volumes:
+      - .:/rails
+      - bundle_cache:/usr/local/bundle
+    command: ["./bin/rails", "server", "-b", "0.0.0.0"]
+    profiles: ["dev"]
+
+volumes:
+  bundle_cache:
