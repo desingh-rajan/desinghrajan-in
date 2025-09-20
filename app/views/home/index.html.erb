@@ -423,69 +423,51 @@
     <div class="text-center mb-12">
       <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Projects</h2>
       <p class="text-lg text-slate-600">Some of my recent work and side projects</p>
-      <div class="mt-4 inline-flex items-center px-4 py-2 bg-amber-50 border border-amber-200 rounded-lg">
-        <svg class="w-4 h-4 text-amber-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-        <span class="text-sm text-amber-700 font-medium">This section will be updated soon - projects coming shortly!</span>
-      </div>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project 1 -->
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Project 1 - Atofon -->
       <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-        <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-          <div class="text-white text-6xl font-bold">DR</div>
+        <div class="h-48 bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center p-8">
+          <img src="https://seller.atofon.com/atofon.svg" alt="Atofon Logo" class="h-16 w-auto filter brightness-0 invert">
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">Portfolio & Business Platform</h3>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Atofon - B2B Construction Marketplace</h3>
+          <p class="text-slate-600 mb-4">Live startup from Namakkal - Complete B2B marketplace for construction & industrial supplies with buyer and seller apps. Anonymous quotes, secure transactions.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">Live Startup</span>
+            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">B2B Marketplace</span>
+            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Web + Mobile</span>
+            <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Production</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-3 items-center">
+              <a href="https://atofon.com/" class="text-blue-600 hover:text-blue-800 text-sm font-medium" target="_blank">Buyer App →</a>
+              <a href="https://seller.atofon.com/" class="text-green-600 hover:text-green-800 text-sm font-medium" target="_blank">Seller App →</a>
+            </div>
+            <span class="text-xs text-slate-500">Available on App Store & Play Store</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 - Portfolio -->
+      <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+          <div class="text-white text-6xl font-bold">Its Me</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">My Portfolio Site</h3>
           <p class="text-slate-600 mb-4">This very website - a Rails 8 application with modern design and deployment automation.</p>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">Rails 8</span>
             <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Tailwind CSS</span>
             <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Docker</span>
           </div>
-          <a href="https://github.com/desingh-rajan" class="text-blue-600 hover:text-blue-800 text-sm font-medium" target="_blank">View Code →</a>
+          <a href="https://github.com/desingh-rajan/desinghrajan-in" class="text-blue-600 hover:text-blue-800 text-sm font-medium" target="_blank">View Code →</a>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-        <div class="h-48 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
-          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-          </svg>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">Analytics Dashboard</h3>
-          <p class="text-slate-600 mb-4">Real-time analytics dashboard with interactive charts and data visualization.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">React</span>
-            <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded">D3.js</span>
-            <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">Rails API</span>
-          </div>
-          <span class="text-slate-400 text-sm">Coming Soon</span>
-        </div>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-        <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
-          </svg>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">DevOps Automation</h3>
-          <p class="text-slate-600 mb-4">Automated deployment pipeline with Docker, Nginx, and monitoring setup.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Docker</span>
-            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Kamal</span>
-            <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded">Vultr</span>
-          </div>
-          <span class="text-slate-400 text-sm">In Progress</span>
-        </div>
-      </div>
     </div>
   </div>
 </section>
