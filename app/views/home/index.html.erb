@@ -40,7 +40,7 @@
         </span>
       </h1>
       <p class="text-xl text-slate-700 mb-8 max-w-4xl mx-auto leading-relaxed w-full">
-        <strong>10+ years</strong> building scalable backend APIs, big data systems, and geo-spatial applications with <strong>Ruby on Rails</strong> and <strong>Node.js</strong>.
+        <strong><%= (Date.current.year - 2010) %>+ years</strong> building scalable backend APIs, big data systems, and geo-spatial applications with <strong>Ruby on Rails</strong> and <strong>Node.js</strong>.
       </p>
       <div class="flex flex-wrap justify-center gap-4 mb-10 w-full">
         <span class="inline-flex items-center px-4 py-2 rounded bg-white text-slate-700 shadow text-lg"><span class="mr-2">🏗️</span>System Architecture</span>
@@ -141,7 +141,7 @@
       <p class="text-lg text-slate-600">Technologies and tools I work with</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 gap-8 justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-8 justify-center max-w-7xl mx-auto">
       <!-- Backend -->
       <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-red-500">
         <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
@@ -413,6 +413,70 @@
           </div>
         </div>
       </div>
+
+      <!-- Programming Languages -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-indigo-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">💻</span>
+          Programming Languages
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Ruby</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">15+ Years</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">JavaScript/TypeScript</span>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Elixir</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Dart</span>
+            <span class="text-xs bg-cyan-100 text-cyan-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Java/C++</span>
+            <span class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">Foundation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="bg-white p-8 px-8 rounded-lg shadow-sm border-l-4 border-pink-500">
+        <h3 class="text-lg font-semibold text-slate-900 mb-5 flex items-center">
+          <span class="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center mr-3">⚡</span>
+          Frameworks & Libraries
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Ruby on Rails</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">15+ Years</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Express/Node.js</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Next.js</span>
+            <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Phoenix/Elixir</span>
+            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Sinatra</span>
+            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Expert</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-slate-700 font-medium">Cucumber/Selenium</span>
+            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Testing Expert</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -425,7 +489,7 @@
       <p class="text-lg text-slate-600">Some of my recent work and side projects</p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
       <!-- Project 1 - Atofon -->
       <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
         <div class="h-48 bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center p-8">
@@ -456,14 +520,35 @@
           <div class="text-white text-6xl font-bold">Its Me</div>
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">My Portfolio Site</h3>
-          <p class="text-slate-600 mb-4">This very website - a Rails 8 application with modern design and deployment automation.</p>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Personal Portfolio & Tech Showcase</h3>
+          <p class="text-slate-600 mb-4">Full-stack Rails 8 application featuring modern responsive design, automated Docker deployment, and optimized asset pipeline. Showcases technical expertise and project portfolio.</p>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">Rails 8</span>
             <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Tailwind CSS</span>
             <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Docker</span>
+            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Responsive</span>
           </div>
-          <a href="https://github.com/desingh-rajan/desinghrajan-in" class="text-blue-600 hover:text-blue-800 text-sm font-medium" target="_blank">View Code →</a>
+          <a href="https://github.com/desingh-rajan/desinghrajan-in" class="text-blue-600 hover:text-blue-800 text-sm font-medium" target="_blank">View Source →</a>
+        </div>
+      </div>
+
+      <!-- Project 3 - Surya Kitchens (Current/Ongoing) -->
+      <div class="bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center p-8">
+          <div class="bg-white rounded-lg p-4 shadow-lg">
+            <img src="/surya-logo-128.jpg" srcset="/surya-logo-64.jpg 64w, /surya-logo-128.jpg 128w, /surya-logo-256.jpg 256w" sizes="120px" alt="Surya Kitchens Logo" class="h-24 w-auto object-contain">
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Surya Kitchens - Cast Iron Cookware</h3>
+          <p class="text-slate-600 mb-4">Online platform for purchasing premium traditional cast iron cookware. Bulk orders and individual purchases for an authentic cooking experience.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded">🚧 In Progress</span>
+            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Next.js</span>
+            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">E-commerce</span>
+            <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Traditional</span>
+          </div>
+          <a href="https://surya-kitchens.vercel.app/" class="text-blue-600 hover:text-blue-800 text-sm font-medium" target="_blank">View Platform →</a>
         </div>
       </div>
 
