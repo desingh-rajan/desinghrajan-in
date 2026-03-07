@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Portfolio homepage
   root "home#index"
+
+  # Contact form submissions
+  post "/contacts", to: "contacts#create", as: :contacts
 end

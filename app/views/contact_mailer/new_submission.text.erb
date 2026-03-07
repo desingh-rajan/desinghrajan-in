@@ -1,0 +1,13 @@
+New Contact Form Submission — desinghrajan.in
+=============================================
+
+Name:         <%= @contact.name %>
+Email:        <%= @contact.email %>
+Project Type: <%= @contact.project_type&.humanize || "Not specified" %>
+
+Message:
+---------
+<%= @contact.message %>
+
+---------
+Sent from desinghrajan.in contact form on <%= @contact.created_at.strftime("%B %-d, %Y at %H:%M UTC") %>

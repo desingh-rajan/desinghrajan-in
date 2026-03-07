@@ -32,6 +32,8 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
+    - SES_SMTP_USERNAME
+    - SES_SMTP_PASSWORD
   clear:
     # Single process for portfolio site - no workers needed
     WEB_CONCURRENCY: 0

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <style>
+      body { font-family: Arial, sans-serif; color: #1e293b; background: #f8fafc; margin: 0; padding: 0; }
+      .wrapper { max-width: 600px; margin: 32px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+      .header { background: #4f46e5; padding: 24px 32px; }
+      .header h1 { color: #ffffff; margin: 0; font-size: 20px; }
+      .body { padding: 32px; line-height: 1.7; }
+      .body h2 { color: #4f46e5; margin-top: 0; }
+      .summary { background: #f1f5f9; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+      .summary p { margin: 6px 0; font-size: 14px; color: #475569; }
+      .summary strong { color: #1e293b; }
+      .cta { display: inline-block; margin-top: 8px; background: #4f46e5; color: #ffffff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+      .footer { padding: 16px 32px; background: #f1f5f9; font-size: 12px; color: #94a3b8; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Thanks for reaching out!</h1>
+      </div>
+      <div class="body">
+        <h2>Hey <%= @contact.name.split.first %>, I got your message!</h2>
+        <p>Thanks for getting in touch. I've received your message and will get back to you as soon as possible — usually within 1–2 business days.</p>
+        <div class="summary">
+          <p><strong>Name:</strong> <%= @contact.name %></p>
+          <p><strong>Project type:</strong> <%= @contact.project_type&.humanize || "General inquiry" %></p>
+          <p><strong>Message:</strong> <%= @contact.message %></p>
+        </div>
+        <p>In the meantime, feel free to check out my work or connect with me:</p>
+        <p>
+          <a href="https://github.com/desingh-rajan" class="cta" style="margin-right:8px;">GitHub</a>
+          <a href="https://www.linkedin.com/in/desinghrajan/" class="cta">LinkedIn</a>
+        </p>
+        <p style="margin-top:24px;">Talk soon,<br><strong>Desingh Rajan</strong><br>Full Stack Developer &amp; Tech Consultant</p>
+      </div>
+      <div class="footer">
+        You're receiving this because you submitted the contact form at <a href="https://desinghrajan.in" style="color:#4f46e5;">desinghrajan.in</a>
+      </div>
+    </div>
+  </body>
+</html>

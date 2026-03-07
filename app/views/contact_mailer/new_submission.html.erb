@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <style>
+      body { font-family: Arial, sans-serif; color: #1e293b; background: #f8fafc; margin: 0; padding: 0; }
+      .wrapper { max-width: 600px; margin: 32px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+      .header { background: #4f46e5; padding: 24px 32px; }
+      .header h1 { color: #ffffff; margin: 0; font-size: 20px; }
+      .body { padding: 32px; }
+      .field { margin-bottom: 20px; }
+      .label { font-size: 12px; font-weight: bold; text-transform: uppercase; color: #64748b; letter-spacing: 0.05em; margin-bottom: 4px; }
+      .value { font-size: 15px; color: #1e293b; background: #f1f5f9; padding: 10px 14px; border-radius: 6px; }
+      .message-value { white-space: pre-wrap; }
+      .footer { padding: 16px 32px; background: #f1f5f9; font-size: 12px; color: #94a3b8; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>New Contact Form Submission</h1>
+      </div>
+      <div class="body">
+        <div class="field">
+          <div class="label">Name</div>
+          <div class="value"><%= @contact.name %></div>
+        </div>
+        <div class="field">
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:<%= @contact.email %>" style="color:#4f46e5;"><%= @contact.email %></a></div>
+        </div>
+        <div class="field">
+          <div class="label">Project Type</div>
+          <div class="value"><%= @contact.project_type&.humanize || "Not specified" %></div>
+        </div>
+        <div class="field">
+          <div class="label">Message</div>
+          <div class="value message-value"><%= @contact.message %></div>
+        </div>
+      </div>
+      <div class="footer">
+        Sent from <a href="https://desinghrajan.in" style="color:#4f46e5;">desinghrajan.in</a> contact form &mdash; <%= @contact.created_at.strftime("%B %-d, %Y at %H:%M UTC") %>
+      </div>
+    </div>
+  </body>
+</html>
