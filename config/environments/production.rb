@@ -67,8 +67,8 @@ Rails.application.configure do
     port: 587,
     authentication: :login,
     enable_starttls_auto: true,
-    user_name: ENV.fetch("SES_SMTP_USERNAME"),
-    password: ENV.fetch("SES_SMTP_PASSWORD")
+    user_name: ENV["SES_SMTP_USERNAME"],
+    password: ENV["SES_SMTP_PASSWORD"]
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
