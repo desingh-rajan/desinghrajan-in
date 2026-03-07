@@ -28,7 +28,7 @@
 <body class="font-sans bg-slate-50 text-slate-900">
   <% if notice || alert %>
     <div id="flash-toast"
-         class="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 px-5 py-4 rounded-xl shadow-2xl border text-sm font-medium max-w-md w-full
+         class="fixed top-20 left-1/2 -translate-x-1/2 z-[60] flex items-center gap-3 px-5 py-4 rounded-xl shadow-2xl border text-sm font-medium max-w-md w-full
                 <%= notice ? 'bg-white border-green-200 text-slate-800' : 'bg-white border-red-200 text-slate-800' %>"
          style="animation: slideDown 0.35s ease both;">
       <% if notice %>
