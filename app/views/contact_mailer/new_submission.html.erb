@@ -1,46 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-    <style>
-      body { font-family: Arial, sans-serif; color: #1e293b; background: #f8fafc; margin: 0; padding: 0; }
-      .wrapper { max-width: 600px; margin: 32px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-      .header { background: #4f46e5; padding: 24px 32px; }
-      .header h1 { color: #ffffff; margin: 0; font-size: 20px; }
-      .body { padding: 32px; }
-      .field { margin-bottom: 20px; }
-      .label { font-size: 12px; font-weight: bold; text-transform: uppercase; color: #64748b; letter-spacing: 0.05em; margin-bottom: 4px; }
-      .value { font-size: 15px; color: #1e293b; background: #f1f5f9; padding: 10px 14px; border-radius: 6px; }
-      .message-value { white-space: pre-wrap; }
-      .footer { padding: 16px 32px; background: #f1f5f9; font-size: 12px; color: #94a3b8; text-align: center; }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1>New Contact Form Submission</h1>
-      </div>
-      <div class="body">
-        <div class="field">
-          <div class="label">Name</div>
-          <div class="value"><%= @contact.name %></div>
-        </div>
-        <div class="field">
-          <div class="label">Email</div>
-          <div class="value"><a href="mailto:<%= @contact.email %>" style="color:#4f46e5;"><%= @contact.email %></a></div>
-        </div>
-        <div class="field">
-          <div class="label">Project Type</div>
-          <div class="value"><%= @contact.project_type&.humanize || "Not specified" %></div>
-        </div>
-        <div class="field">
-          <div class="label">Message</div>
-          <div class="value message-value"><%= @contact.message %></div>
-        </div>
-      </div>
-      <div class="footer">
-        Sent from <a href="https://desinghrajan.in" style="color:#4f46e5;">desinghrajan.in</a> contact form &mdash; <%= @contact.created_at.strftime("%B %-d, %Y at %H:%M UTC") %>
-      </div>
-    </div>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Contact Submission</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f1f5f9;padding:40px 16px;">
+    <tr><td align="center">
+
+      <!-- Brand header -->
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+        <tr>
+          <td style="padding:0 0 24px 0;text-align:center;">
+            <a href="https://desinghrajan.in" style="text-decoration:none;font-size:20px;font-weight:700;color:#4f46e5;letter-spacing:-0.5px;">desinghrajan.in</a>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Card -->
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e2e8f0;">
+
+        <!-- Header stripe -->
+        <tr>
+          <td style="background:linear-gradient(135deg,#4f46e5 0%,#6366f1 100%);padding:32px 40px;">
+            <p style="margin:0 0 6px 0;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.7);">New Inquiry</p>
+            <h1 style="margin:0;font-size:24px;font-weight:700;color:#ffffff;line-height:1.3;">You have a new message</h1>
+            <p style="margin:8px 0 0 0;font-size:14px;color:rgba(255,255,255,0.85);">Submitted via the contact form on your portfolio site.</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:36px 40px 28px;">
+
+            <!-- Sender info -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+              <tr>
+                <td style="padding:20px 24px;">
+                  <p style="margin:0 0 4px 0;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:#94a3b8;">From</p>
+                  <p style="margin:0;font-size:18px;font-weight:600;color:#1e293b;"><%= @contact.name %></p>
+                  <p style="margin:4px 0 0 0;font-size:14px;color:#4f46e5;"><a href="mailto:<%= @contact.email %>" style="color:#4f46e5;text-decoration:none;"><%= @contact.email %></a></p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Details grid -->
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-bottom:20px;">
+                  <p style="margin:0 0 6px 0;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:#94a3b8;">Project Type</p>
+                  <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-size:13px;font-weight:600;padding:4px 12px;border-radius:20px;"><%= @contact.project_type&.humanize || 'Not specified' %></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="margin:0 0 8px 0;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:#94a3b8;">Message</p>
+                  <div style="background:#f8fafc;border-left:3px solid #4f46e5;border-radius:0 6px 6px 0;padding:16px 20px;font-size:15px;line-height:1.7;color:#374151;white-space:pre-wrap;"><%= @contact.message %></div>
+                </td>
+              </tr>
+            </table>
+
+            <!-- CTA -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:32px;">
+              <tr>
+                <td>
+                  <a href="mailto:<%= @contact.email %>?subject=Re: Your inquiry about <%= @contact.project_type&.humanize || 'your project' %>"
+                     style="display:inline-block;background:#4f46e5;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;padding:13px 28px;border-radius:8px;">Reply to <%= @contact.name.split.first %> &rarr;</a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding:20px 40px;border-top:1px solid #f1f5f9;">
+            <p style="margin:0;font-size:12px;color:#94a3b8;line-height:1.6;">
+              Received <%= @contact.created_at.strftime("%B %-d, %Y at %I:%M %p UTC") %> &bull;
+              <a href="https://desinghrajan.in/#contact" style="color:#94a3b8;">View contact form</a>
+            </p>
+          </td>
+        </tr>
+
+      </table>
+
+      <!-- Bottom spacer -->
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+        <tr><td style="height:40px;"></td></tr>
+      </table>
+
+    </td></tr>
+  </table>
+
+</body>
 </html>
+
