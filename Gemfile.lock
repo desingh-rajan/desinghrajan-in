@@ -181,6 +181,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.10-arm-linux-musl)
       racc (~> 1.4)
+    nokogiri (1.18.10-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux-musl)
@@ -311,6 +313,7 @@ GEM
     sqlite3 (2.7.3-aarch64-linux-musl)
     sqlite3 (2.7.3-arm-linux-gnu)
     sqlite3 (2.7.3-arm-linux-musl)
+    sqlite3 (2.7.3-arm64-darwin)
     sqlite3 (2.7.3-x86_64-linux-gnu)
     sqlite3 (2.7.3-x86_64-linux-musl)
     sshkit (1.24.0)
@@ -329,11 +332,13 @@ GEM
     tailwindcss-ruby (4.1.12)
     tailwindcss-ruby (4.1.12-aarch64-linux-gnu)
     tailwindcss-ruby (4.1.12-aarch64-linux-musl)
+    tailwindcss-ruby (4.1.12-arm64-darwin)
     tailwindcss-ruby (4.1.12-x86_64-linux-gnu)
     tailwindcss-ruby (4.1.12-x86_64-linux-musl)
     thor (1.4.0)
     thruster (0.1.15)
     thruster (0.1.15-aarch64-linux)
+    thruster (0.1.15-arm64-darwin)
     thruster (0.1.15-x86_64-linux)
     timeout (0.4.4)
     tsort (0.2.0)
@@ -367,6 +372,7 @@ PLATFORMS
   aarch64-linux-musl
   arm-linux-gnu
   arm-linux-musl
+  arm64-darwin-25
   x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
